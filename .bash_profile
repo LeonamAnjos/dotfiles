@@ -1,4 +1,12 @@
 # Aliases
+
+## navigation
+alias repos='cd /c/repos'
+alias gowin='cd /c/repos/rps-gowin'
+alias gocef='cd /c/repos/rps-gowin-cefsharp'
+alias goweb='cd /c/repos/rps-webkick'
+alias infra='cd /c/repos/rps-system-engineering'
+
 ## git
 alias g='git'
 alias gs='git status -sb'
@@ -15,12 +23,14 @@ alias gp='git push'
 alias gpo='git push origin'
 
 alias ga='git add'
-alias gap='git add --pach'
+alias gap='git add --patch'
 
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 alias grp='git reset --patch'
 alias gclean='git reset --hard && git clean -dfx'
+
+alias grvh='git revert HEAD'
 
 alias gc='git commit -v'
 alias gc!='git commit -v --amend'
