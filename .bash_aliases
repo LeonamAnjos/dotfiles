@@ -2,10 +2,6 @@
 
 ## navigation
 alias repos='cd /c/repos'
-alias gowin='cd /c/repos/rps-gowin'
-alias gocef='cd /c/repos/rps-gowin-cefsharp'
-alias goweb='cd /c/repos/rps-webkick'
-alias infra='cd /c/repos/rps-system-engineering'
 
 ## git
 alias g='git'
