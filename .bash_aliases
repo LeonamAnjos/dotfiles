@@ -52,6 +52,7 @@ alias gstp='git stash pop'
 alias gstd='git stash drop'
 
 alias glg='git log --stat --max-count=10'
+alias glgs='git log --format="* %s"'
 alias glgg='git log --graph --max-count=10'
 alias glgga='git log --graph --decorate --all'
 alias glgfp='git log --first-parent'
