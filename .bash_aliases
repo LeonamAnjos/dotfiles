@@ -9,6 +9,7 @@ alias gs='git status -sb'
 alias gst='git status'
 
 alias gt='git tag -a'
+alias gpot='git push origin --tags'
 
 alias gd='git diff'
 alias gdc='git diff --cached'
