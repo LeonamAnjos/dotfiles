@@ -8,6 +8,8 @@ alias g='git'
 alias gs='git status -sb'
 alias gst='git status'
 
+alias gt='git tag -a'
+
 alias gd='git diff'
 alias gdc='git diff --cached'
 
