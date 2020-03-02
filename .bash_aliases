@@ -38,6 +38,7 @@ alias gcm='git commit -m'
 alias gco='git checkout'
 alias gcom='git checkout master'
 alias gcob='git checkout -b'
+alias gcot='git checkout --track'
 
 alias gr='git remote'
 alias grv='git remote -v'
@@ -95,10 +96,3 @@ alias gignore='git update-index --assume-unchanged'
 alias gunignore='git update-index --no-assume-unchanged'
 # list temporarily ignored files
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
-
-## terraform
-alias tf='terraform'
-alias tfi='terraform init'
-alias tfa='terraform applay'
-alias tfd='terraform destroy'
-alias tfp='terraform plan'
