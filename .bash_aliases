@@ -65,6 +65,7 @@ alias glo='git log --oneline --decorate --color'
 alias glog='git log --oneline --decorate --color --graph'
 alias gcount='git shortlog -sn --no-merges'
 alias glglt='git log $(git describe --tags --abbrev=0)..HEAD --format="* %s"'
+alias glgbt='f(){ git log $1..$2 --format="* %s"; unset -f f; }; f'
 
 alias gcl='git config --list'
 
