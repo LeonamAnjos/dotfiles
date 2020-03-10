@@ -38,7 +38,7 @@ alias gcm='git commit -m'
 alias gco='git checkout'
 alias gcom='git checkout master'
 alias gcob='git checkout -b'
-alias gcorb='f(){ git checkout $1 --track; unset -f f; }; f'
+alias gcorb='f(){ git checkout --track origin/$1; unset -f f; }; f'
 alias gcot='f(){ git checkout tags/$1 -b $1; unset -f f; }; f'
 
 alias gr='git remote'
