@@ -8,9 +8,6 @@ alias g='git'
 alias gs='git status -sb'
 alias gst='git status'
 
-alias gt='git tag -a'
-alias gpot='git push origin --tags'
-
 alias gd='git diff'
 alias gdc='git diff --cached'
 
@@ -20,6 +17,10 @@ alias gup='git pull --rebase'
 
 alias gp='git push'
 alias gpo='git push origin'
+alias gpot='git push origin --tags'
+
+alias gt='git tag -a'
+alias gtl='git describe --tags --abbrev=0'
 
 alias ga='git add'
 alias gap='git add --patch'
