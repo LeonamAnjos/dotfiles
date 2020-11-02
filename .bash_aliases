@@ -20,7 +20,8 @@ alias gpo='git push origin'
 alias gpot='git push origin --tags'
 
 alias gt='git tag -a'
-alias gtl='git describe --tags --abbrev=0'
+alias gtl='f(){ git tag --sort=-version:refname | head -n $1; unset -f f; }; f'
+alias gtdl='git describe --tags --abbrev=0'
 
 alias ga='git add'
 alias gap='git add --patch'
