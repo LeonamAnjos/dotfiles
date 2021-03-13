@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Git Aliases
 alias g='git'
 alias gs='git status -sb'
