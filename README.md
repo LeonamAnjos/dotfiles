@@ -1,10 +1,11 @@
 # dotfiles
 Personal dotfiles
 
-## How to use
+## How to install
 
-```bash
+```sh
 $ git clone git@github.com:LeonamAnjos/dotfiles.git
 $ cd dotfiles
 $ ./install.sh
+$ source ~/.bashrc
 ```
