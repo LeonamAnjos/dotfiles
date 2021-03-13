@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # helper functions for Bash - easier coloring than using escape sequences
 function Color() {
   echo "\[$(tput setaf $1)\]"
