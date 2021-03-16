@@ -15,14 +15,20 @@ color_red_2=$(Color 9)
 
 color_green_1=$(Color 2)
 color_green_2=$(Color 10)
+color_green_3=$(Color 22)
+color_green_4=$(Color 28)
+color_green_5=$(Color 34)
+color_green_6=$(Color 40)
+color_green_7=$(Color 46)
 
 color_yellow_1=$(Color 3)
 color_yellow_2=$(Color 11)
+color_yellow_3=$(Color 214)
 
 color_blue_1=$(Color 4)
 color_blue_2=$(Color 6)
 color_blue_3=$(Color 12)
-color_blue_4=$(Color 14)
+color_blue_4=$(Color 27)
 
 color_purple_1=$(Color 5)
 color_purple_2=$(Color 13)
@@ -49,11 +55,11 @@ function LastStatusPrompt() {
 }
 
 function SessionPrompt() {
-  echo "$color_yellow_1\u@\h$color_reset"
+  echo "$color_yellow_3\u@\h$color_reset"
 }
 
 function FolderPrompt() {
-  echo "$color_blue_1\w$color_reset"
+  echo "$color_blue_4\w$color_reset"
 }
 
 function GitBranch() {
@@ -63,7 +69,7 @@ function GitBranch() {
 
 function GitPrompt() {
   local git_branch=$(GitBranch)
-  [[ ! -z $git_branch ]] && echo '\033[38;5;046m['${git_branch}']\033[0m'
+  [[ ! -z $git_branch ]] && echo "${color_green_7}[${git_branch}]${color_reset}"
 }
 
 function MyPrompt() {
