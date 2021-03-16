@@ -1,7 +1,11 @@
+#!/bin/bash
+
 # Git Aliases
 alias g='git'
 alias gs='git status -sb'
 alias gst='git status'
+
+alias gsru='git config --get remote.origin.url'
 
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -49,6 +53,7 @@ alias gb='git branch'
 alias gba='git branch -a'
 
 alias gsts='git stash show --text'
+alias gstl='git stash list'
 alias gsta='git stash'
 alias gstp='git stash pop'
 alias gstd='git stash drop'
