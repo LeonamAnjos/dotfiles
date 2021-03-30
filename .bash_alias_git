@@ -63,14 +63,14 @@ alias glgs='git log --format="* %s"'
 alias glgg='git log --graph --max-count=10'
 alias glgga='git log --graph --decorate --all'
 alias glgfp='git log --first-parent'
-alias glo='git log --oneline --decorate --color'
-alias glog='git log --oneline --decorate --color --graph'
+alias glo='git log --pretty=format:"%C(auto)%h%d %Cgreen(%cs) %C(auto)%s"'
+alias gloa='git log --pretty=format:"%C(auto)%h%d %C(green)(%cs) %C(cyan)%an %C(auto)%s"'
+alias glog='git log --graph --pretty=format:"%C(auto)%h%d %Cgreen(%cs) %C(auto)%s"'
 alias gcount='git shortlog -sn --no-merges'
 alias glglt='git log $(git describe --tags --abbrev=0)..HEAD --format="* %s"'
 alias glgbt='f(){ git log $1..$2 --format="* %s"; unset -f f; }; f'
 
 alias gcl='git config --list'
-
 alias gcp='git cherry-pick'
 
 alias grbi='git rebase -i'
