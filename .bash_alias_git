@@ -22,6 +22,7 @@ alias gt='git tag -a'
 alias gtl='f(){ git tag --sort=-version:refname | head -n $1; unset -f f; }; f'
 alias gtdl='git describe --tags --abbrev=0'
 alias gtr='f(){ git tag -d $1; git push --delete origin $1; unset -f f; }; f'
+alias gtlc='f(){ git show-ref --tags -d | grep $1 | grep {} | tail -10; unset -f f;}; f'
 
 alias ga='git add'
 alias gap='git add --patch'
