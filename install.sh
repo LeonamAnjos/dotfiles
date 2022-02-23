@@ -1,14 +1,16 @@
-#!/bin/bash
+#! /bin/bash
 
 file_bash=~/.bashrc
-file_git_alias=".bash_alias_git"
 file_prompt=".bash_prompt"
+file_aliases=".bash_aliases"
+file_git_config="setup_git_config.sh"
 
 path=$(pwd)
-path_git_alias="$path/$file_git_alias"
 path_prompt="$path/$file_prompt"
+path_aliases="$path/$file_aliases"
+path_git_config="$path/$file_git_config"
 
-function Install() {
+function install_rc {
   local description="$1"
   local path_to_include="$2"
 
@@ -20,5 +22,7 @@ function Install() {
   fi
 }
 
-Install $file_git_alias $path_git_alias
-Install $file_prompt $path_prompt
+install_rc $file_prompt $path_prompt
+install_rc $file_aliases $path_aliases
+
+source $path_git_config && echo "( x ) $file_git_config" || echo "(   ) $file_git_config"

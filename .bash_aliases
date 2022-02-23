@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 # Git Aliases
 alias g='git'
@@ -76,14 +76,14 @@ alias glglt='git log $(git describe --tags --abbrev=0)..HEAD --format="* %s"'
 alias glgbt='f(){ git log $1..$2 --format="* %s"; unset -f f; }; f'
 
 alias gcl='git config --list'
-alias gcp='git cherry-pick'
+# alias gcp='git cherry-pick'
 
 # alias grbi='git rebase -i'
 # alias grbc='git rebase --continue'
 # alias grba='git rebase --abort'
 
-alias gm='git merge'
-alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+# alias gm='git merge'
+# alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
 alias gls='git ls-files'
 
