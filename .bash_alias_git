@@ -35,17 +35,17 @@ alias gtm='f(){ git tag -a $1$2 -m $1$2; echo "Tag: $1$2"; unset -f f; }; f "rel
 # alias grp='git reset --patch'
 # alias gclean='git reset --hard && git clean -dfx'
 
-alias grvh='git revert HEAD'
+# alias grvh='git revert HEAD'
 
-alias gc='git commit -v'
-alias gc!='git commit -v --amend'
-alias gcm='git commit -m'
+# alias gc='git commit -v'
+# alias gc!='git commit -v --amend'
+# alias gcm='git commit -m'
 
-alias gco='git checkout'
-alias gcom='git checkout master'
-alias gcob='git checkout -b'
-alias gcorb='f(){ git checkout --track origin/$1; unset -f f; }; f'
-alias gcot='f(){ git checkout tags/$1 -b $1; unset -f f; }; f'
+# alias gco='git checkout'
+# alias gcom='git checkout master'
+# alias gcob='git checkout -b'
+# alias gcorb='f(){ git checkout --track origin/$1; unset -f f; }; f'
+# alias gcot='f(){ git checkout tags/$1 -b $1; unset -f f; }; f'>>>>>>> fa73d3f (Add setup git alias)
 
 alias gr='git remote'
 alias grv='git remote -v'
