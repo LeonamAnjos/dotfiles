@@ -34,11 +34,6 @@ git config --global alias.p   'push'
 git config --global alias.pot 'push origin --tags'
 git config --global alias.pob '!git push origin $(git branch --show-current)'
 
-git config --global alias.rh='git reset HEAD'
-git config --global alias.rhh='git reset HEAD --hard'
-git config --global alias.rp='git reset --patch'
-git config --global alias.clean='git reset --hard && git clean -df'
-
 git config --global alias.rh     'git reset HEAD'
 git config --global alias.rhh    'git reset HEAD --hard'
 git config --global alias.rp     'git reset --patch'
